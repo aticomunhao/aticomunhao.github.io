@@ -16,7 +16,17 @@
         <script type='text/javascript' src='https://widget.freshworks.com/widgets/64000000445.js' async defer></script>
         <script> 
             FreshworksWidget('open');
-            FreshworksWidget('hide', 'launcher');        
-         </script>
+            FreshworksWidget('hide', 'launcher');
+            
+            meutempo = setInterval(() => {
+                var elementos = document.getElementById("widget-frame").contentWindow.document.querySelectorAll(".dgtKod");
+                if(elementos && elementos.length > 0){
+                    elementos[2].innerHTML='Assunto <span class="Shared__MandatoryMark-jeuxu9-2 hzoMZx" data-testid="text-mandatory">*</span>';
+                    elementos[4].innerHTML='Descrição <span class="Shared__MandatoryMark-jeuxu9-2 hzoMZx" data-testid="text-mandatory">*</span>';
+                    clearInterval(meutempo);
+                }
+            }, 500);
+
+        </script>
     </body>
 </html>
