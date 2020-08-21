@@ -1,32 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>ATI - Suporte</title>
     </head>
     <body>
-        <script>
-            window.fwSettings={
-            'widget_id':64000000445,
-            'locale': 'pt-BR'
-            };
-            !function(){if("function"!=typeof window.FreshworksWidget){var n=function(){n.q.push(arguments)};n.q=[],window.FreshworksWidget=n}}() 
-        </script>
-        <script type='text/javascript' src='https://widget.freshworks.com/widgets/64000000445.js' async defer></script>
-        <script> 
-            FreshworksWidget('open');
-            FreshworksWidget('hide', 'launcher');
-            
-            meutempo = setInterval(() => {
-                var elementos = document.getElementById("widget-frame").contentWindow.document.querySelectorAll(".dgtKod");
-                if(elementos && elementos.length > 0){
-                    elementos[2].innerHTML='Assunto <span class="Shared__MandatoryMark-jeuxu9-2 hzoMZx" data-testid="text-mandatory">*</span>';
-                    elementos[4].innerHTML='Descrição <span class="Shared__MandatoryMark-jeuxu9-2 hzoMZx" data-testid="text-mandatory">*</span>';
-                    clearInterval(meutempo);
-                }
-            }, 500);
-
-        </script>
+        <div width="100%">
+            <script>
+                window.fwSettings={
+                'widget_id':64000000445,
+                'locale': 'pt-BR'
+                };
+                !function(){if("function"!=typeof window.FreshworksWidget){var n=function(){n.q.push(arguments)};n.q=[],window.FreshworksWidget=n}}() 
+            </script>
+            <script type='text/javascript' src='https://widget.freshworks.com/widgets/64000000445.js' async defer></script>
+            <script> 
+                FreshworksWidget('open');
+                FreshworksWidget('hide', 'launcher');
+                // meutempo = setInterval(() => {
+                //     var elementos = document.getElementById("widget-frame").contentWindow.document.querySelectorAll(".dgtKod");
+                //     var janelaPrincipal = document.getElementById("widget-frame").contentWindow.document.querySelectorAll(".fdNbsI");
+    
+                //     if(elementos && elementos.length > 0){
+                //         janelaPrincipal.
+                //         elementos[2].innerHTML='Assunto <span class="Shared__MandatoryMark-jeuxu9-2 hzoMZx" data-testid="text-mandatory">*</span>';
+                //         elementos[4].innerHTML='Descrição <span class="Shared__MandatoryMark-jeuxu9-2 hzoMZx" data-testid="text-mandatory">*</span>';
+                //         clearInterval(meutempo);
+                //     }
+                // }, 500);
+    
+            </script>
+        </div>
+        
     </body>
 </html>
